@@ -1,4 +1,12 @@
 blocks:
+  cold_glacier:
+    name: cold glacier
+    type: chart
+    uuid: cold_glacier
+  radiant_byte:
+    name: radiant byte
+    type: chart
+    uuid: radiant_byte
   shap_values:
     configuration:
       chart_type: custom
@@ -40,12 +48,32 @@ blocks:
     skip_render: false
     type: chart
     uuid: shap_values_force_chart
+  shape_values:
+    configuration:
+      chart_type: custom
+    data_source:
+      block_uuid: dashboard_data_source
+      pipeline_schedule_id: null
+      pipeline_uuid: xgboost_training
+      type: block
+    error: null
+    name: SHAPE values
+    name_new: SHAPE values
+    skip_render: false
+    type: chart
+    uuid: shape_values
 layout:
-- - block_uuid: shap_values_bar
+- - block_uuid: shape_values
+    width: 1
+  - block_uuid: shap_values_bar
     height: 400
     width: 1
   - block_uuid: shap_values
     height: 400
     width: 1
 - - block_uuid: shap_values_force_chart
+    width: 1
+- - block_uuid: cold_glacier
+    width: 1
+- - block_uuid: radiant_byte
     width: 1
