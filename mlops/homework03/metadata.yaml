@@ -19,21 +19,6 @@ emr_config:
   # You can create a key pair in page https://console.aws.amazon.com/ec2#KeyPairs and download the key file.
   # ec2_key_name: '[ec2_key_pair_name]'
 
-# https://docs.mage.ai/integrations/observability/alerting-email
-# https://support.google.com/mail/answer/185833?hl=en
-notification_config:
-  alert_on:
-    - trigger_failure
-    - trigger_passed_sla
-    - trigger_success
-  email_config:
-    smtp_host: smtp.gmail.com
-    smtp_user: "{{ env_var('SMTP_EMAIL') }}"
-    smtp_password: "{{ env_var('SMTP_PASSWORD') }}"
-    smtp_mail_from: "{{ env_var('SMTP_EMAIL') }}"
-    to_emails:
-      - "{{ env_var('SMTP_EMAIL') }}"
-      
 spark_config:
   # Application name
   app_name: 'my spark app'
@@ -67,4 +52,4 @@ notification_config:
     webhook_url: "{{ env_var('MAGE_SLACK_WEBHOOK_URL') }}"
   teams_config:
     webhook_url: "{{ env_var('MAGE_TEAMS_WEBHOOK_URL') }}"
-project_uuid: unit_1_data_preparation
+project_uuid: homework03

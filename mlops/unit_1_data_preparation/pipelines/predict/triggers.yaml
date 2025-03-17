@@ -1,0 +1,14 @@
+triggers:
+- description: null
+  envs: []
+  last_enabled_at: 2025-03-17 08:23:02.168261+00:00
+  name: realtime prediction
+  pipeline_uuid: predict
+  schedule_interval: null
+  schedule_type: api
+  settings: null
+  sla: null
+  start_time: 2025-03-17 08:22:00+00:00
+  status: active
+  token: 6dcec89bbe2444eea5703cab0adc263d
+  variables: {}

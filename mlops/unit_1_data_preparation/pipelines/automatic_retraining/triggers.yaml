@@ -1,0 +1,17 @@
+triggers:
+- description: null
+  envs: []
+  last_enabled_at: 2025-03-17 07:06:38.821465+00:00
+  name: retrain model hourly
+  pipeline_uuid: automatic_retraining
+  schedule_interval: '@hourly'
+  schedule_type: time
+  settings:
+    allow_blocks_to_fail: true
+    create_initial_pipeline_run: true
+    skip_if_previous_running: true
+  sla: null
+  start_time: 2025-03-17 07:05:00+00:00
+  status: active
+  token: b8c5bf40b8214386b5fc2bc2f93b6d9a
+  variables: {}
