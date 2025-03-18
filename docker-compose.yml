@@ -29,8 +29,9 @@ services:
     image: pgvector/pgvector:0.6.0-pg16
     env_file:
       - .env.dev
-    ports:
-      - 5434:5432
+    # restrict connection from outside
+    # ports:
+    #   - 5434:5432
     volumes:
       - ~/.postgres/data:/var/lib/postgresql/data
       # Custom database initialization scripts (optional).
